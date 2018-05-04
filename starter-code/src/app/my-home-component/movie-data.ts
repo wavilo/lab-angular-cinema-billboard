@@ -1,4 +1,19 @@
-[
+export class Movie {
+constructor(
+  public id: number,
+  public title: string,
+  public poster: string,
+  public synopsis: string,
+  public genres: Array<string>,
+  public year: number,
+  public director: string,
+  public actors: Array<string>,
+  public hours: Array<string>,
+  public room: number
+){}
+}
+
+export const movieList: Array<Movie> = [
   {
     id: 1,
     title: "The Shawshank Redemption",
@@ -16,7 +31,9 @@
       "William Sadler",
       "Clancy Brown",
       "Gil Bellows"
-    ]
+    ],
+    hours: ["16h", "17h" ],
+    room: 1,
   }, {
     id: 2,
     title: "The Godfather",
@@ -34,7 +51,9 @@
       "Richard S. Castellano",
       "Robert Duvall",
       "Sterling Hayden"
-    ]
+    ],
+    hours: ["17h", "18h" ],
+    room: 2,
   }, {
     id: 3,
     title: "The Godfather Part II",
@@ -52,7 +71,9 @@
       "Robert De Niro",
       "John Cazale",
       "Talia Shire"
-    ]
+    ],
+    hours: ["16h", "17h" ],
+    room: 3,
   }, {
     id: 4,
     title: "The Dark Knight",
@@ -70,7 +91,9 @@
       "Michael Caine",
       "Maggie Gyllenhaal",
       "Gary Oldman"
-    ]
+    ],
+    hours: ["16h", "17h" ],
+    room: 4,
   }, {
     id: 5,
     title: "Schindler's List",
@@ -88,6 +111,8 @@
       "Caroline Goodall",
       "Jonathan Sagall",
       "Embeth Davidtz"
-    ]
+    ],
+    hours: ["16h", "17h" ],
+    room: 5,
   }
 ]
